@@ -24,10 +24,11 @@ const laptop = {
         this.wifi = wifi_status
     },
     wifiBands: function (wb_2_5g, wb_5g) {
-        this.wb_2_5g = wb_2_5g
-        this.wb_5g = wb_5g
+        this.speed_wb_2_5g = wb_2_5g
+        this.speed_wb_5g = wb_5g
     }
 }
+
 
 const phone = {
     screen: {
