@@ -12,9 +12,9 @@ const desktop = {
 
 const laptop = {
     screen: {
-        resolution: 1080,
+         resolution: 1080,
         displaytype: "LCD",
-        touchable: true
+       touchable: true
     },
     pointDevice: "Trackpad",
     ram: "16 GB",
@@ -49,7 +49,7 @@ const phone = {
 console.log("Desktop: ", desktop)
 console.log("laptop: ", laptop)
 console.log("phone: ", phone)
-
+// by use method object
 console.log("2.5g speed before: ", laptop.bands.speed_wb_2_5g )
 laptop.wifiBands(200,10000)
 console.log("2.5g speed after: ", laptop.bands.speed_wb_2_5g )
