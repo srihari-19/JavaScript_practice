@@ -23,9 +23,13 @@ const laptop = {
     togglewifi: function (wifi_status) {
         this.wifi = wifi_status
     },
+    bands : {
+        speed_wb_2_5g : 150,
+        speed_wb_5g : 1000
+    },
     wifiBands: function (wb_2_5g, wb_5g) {
-        this.speed_wb_2_5g = wb_2_5g
-        this.speed_wb_5g = wb_5g
+        this.bands.speed_wb_2_5g = wb_2_5g
+        this.bands.speed_wb_5g = wb_5g
     }
 }
 
@@ -45,3 +49,8 @@ const phone = {
 console.log("Desktop: ", desktop)
 console.log("laptop: ", laptop)
 console.log("phone: ", phone)
+
+console.log("2.5g speed before: ", laptop.bands.speed_wb_2_5g )
+laptop.wifiBands(200,10000)
+console.log("2.5g speed after: ", laptop.bands.speed_wb_2_5g )
+console.log("5g speed after: ", laptop.bands.speed_wb_5g )
