@@ -19,10 +19,10 @@ const content = `
 <h1 class="computer_name">${laptop.name}</h1>
 <ul class="computer_feature">
   <li class="feature processor">${laptop.processor}</li>
-  <li class="feature ram">${laptop.ram}gb</li>
-  <li class="feature storage">${laptop.storage}gb</li>
+  <li class="feature ram">${laptop.ram}</li>
+  <li class="feature storage">${laptop.storage}GB</li>
   <li class="feature window">${laptop.os}</li>
-  <li class="feature wifi">${laptop.wifi}</li>
+  <li class="feature wifi">${laptop.wifi ?"wifi available" : "wifi not available" }</li>
   <li class="feature display">${laptop.monitor}</li>
   <li class="feature wifispeed">${laptop.wifispeed.lowspeed}mbps</li>
   <li class="feature wifispeed5g">${laptop.wifispeed.highspeed}mbps</li>
@@ -38,3 +38,8 @@ newArticle.innerHTML = content;
 main.append(newArticle);
 
 console.log(content);
+if (laptop.wifi){
+    console.log("wifi available")
+}else{
+    console.log("wifi not available")
+}
