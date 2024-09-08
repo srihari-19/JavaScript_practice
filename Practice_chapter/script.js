@@ -3,6 +3,7 @@ function isEven(userInput, numUser){
     for (let index = 0; index < userInput.length; index++) {
       if (userInput[index]===numUser){
         count++
+        
       }
         
     }
@@ -12,3 +13,5 @@ function isEven(userInput, numUser){
 
 userValue = isEven("hello", "h");
 console.log(userValue)
+
+let book = "book";
